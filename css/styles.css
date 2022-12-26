@@ -52,7 +52,10 @@ body {
 }
 
 /* HEADER */
-
+.top-container {
+  display: flex;
+  justify-content: center;
+}
 header .language a {
   display: flex;
   text-decoration: none;
@@ -62,14 +65,9 @@ header .language a {
 
 }
 .logo {
-  display: flex;
-  justify-content: center;
-}
-.logo img {
-  width: 8%;
   position: absolute;
-
 }
+
 .social-media {
   display: flex;
   justify-content: flex-end;
