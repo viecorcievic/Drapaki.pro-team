@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 * {
   padding: 0;
@@ -8,9 +8,14 @@
   list-style-type: none;
 }
 
+html {
+  border: 1rem solid #810CA8;
+}
+
 body {
   font-size: 10px;
   overflow-x: hidden !important;
+  margin: 1rem 0rem;
 }
 
 :root {
@@ -47,3 +52,57 @@ body {
 }
 
 /* HEADER */
+
+header .language a {
+  display: flex;
+  text-decoration: none;
+  color: #251829;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  width: 8%;
+  position: absolute;
+
+}
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10%;
+  gap: 3rem;
+}
+.menu {
+  width: 80%;
+  margin: 0 auto;
+}
+.menu nav ul {
+  display: flex;
+  color: #2D033B;
+  font-weight: 400;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0.1rem 7rem;
+  gap: 1rem;
+  z-index: 100;
+}
+
+.menu nav ul li:nth-child(2 ) {
+  margin-right: 5rem;
+ 
+}
+.menu nav ul li:nth-child(3) {
+  margin-left: 5rem;
+ 
+}
+
+header hr {
+  color: #2d033b20;
+}
