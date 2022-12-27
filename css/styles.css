@@ -61,16 +61,23 @@ body {
   justify-content: space-around;
 }
 
-header .language a {
-  display: flex;
+header .lang-menu a {
+  display: block;
+  padding: .1rem 2.5rem;
   text-decoration: none;
+  position: relative;
   color: #251829;
   font-size: 1.2rem;
   font-weight: bold;
+  
 
 }
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  width: 100%;
 }
 
 .social-media {
@@ -94,6 +101,7 @@ header .language a {
   padding: 0.1rem 7rem;
   gap: 1rem;
   z-index: 100;
+  cursor: pointer;
 }
 
 .menu nav ul li:nth-child(2 ) {
