@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style-type: none;
 }
 
 html {
-  border: 1rem solid #810CA8;
+  border: 1rem solid #810ca8;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
   /* Colors */
   --White: #fff;
   --DarkWhiteBcg: #fafafa;
-  --background: #E5B8F4;
+  --background: #e5b8f4;
   --main: 810CA8;
 
   /* --main: linear-gradient(
@@ -61,17 +61,6 @@ body {
   justify-content: space-around;
 }
 
-header .lang-menu a {
-  display: block;
-  padding: .1rem 2.5rem;
-  text-decoration: none;
-  position: relative;
-  color: #251829;
-  font-size: 1.2rem;
-  font-weight: bold;
-  
-
-}
 .logo {
   display: flex;
   justify-content: center;
@@ -84,17 +73,30 @@ header .lang-menu a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
+
+.Company-Name {
+  font-family: "Forte";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #810ca8;
+}
+
 .menu {
   width: 80%;
   margin: 0 auto;
 }
 .menu nav ul {
   display: flex;
-  color: #2D033B;
-  font-weight: 400;
-  font-size: 1.3rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2d033b;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -102,19 +104,98 @@ header .lang-menu a {
   gap: 1rem;
   z-index: 100;
   cursor: pointer;
+  padding-top: 23px;
 }
 
-.menu nav ul li:nth-child(2 ) {
+.menu nav ul li:nth-child(2) {
   margin-right: 5rem;
- 
 }
 .menu nav ul li:nth-child(3) {
   margin-left: 5rem;
- 
 }
 
 header hr {
-  background: #2d033b20;
+  background: rgba(129, 12, 168, 0.2);
   border: 0;
-  height: 2px;
+  height: 3px;
+}
+
+/* LANGUAGE MENU Nie działa ! nie wiem czemu jak wyrzuce z .top-container flexa to okienko wyskakuje ale musi być flex bo rozwala ustawienie ???*/
+
+.lang-menu {
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #810ca8;
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.lang-menu .selected-lang {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  cursor: pointer;
+}
+.lang-menu .selected-lang:before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url(https://www.countryflags.io/us/flat/32.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: #e5b8f4;
+  border: 1px solid #f8f8f8;
+  position: absolute;
+  top: 45px;
+  right: 0px;
+  width: 125px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lang-menu ul li {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang-menu ul li a {
+  text-decoration: none;
+  width: 125px;
+  padding: 5px 10px;
+  display: block;
+}
+
+.lang-menu ul li:hover {
+  background-color: #810ca8;
+}
+
+.lang-menu ul li a:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.lang-menu:hover ul {
+  display: block;
 }
