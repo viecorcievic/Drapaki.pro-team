@@ -214,4 +214,5 @@ Zmieniłem langmenu z-index wyskakuje poprawnie */
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   align-items: center;
+  justify-items: center;
 }
