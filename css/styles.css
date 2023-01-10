@@ -215,8 +215,8 @@ Zmieniłem langmenu z-index wyskakuje poprawnie */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
-  align-items: center;
-  justify-items: center;
+  align-items: flex-start;
+  justify-items: flex-start;
   margin: 1.5rem 1rem;
   max-width: 79%;
   margin: 9rem auto;
@@ -261,7 +261,7 @@ main h1 {
 .grid .button:hover {
   box-shadow: 0px 20px 20px 0px rgba(196, 132, 255, 0.3);
 }
-
+/* 
 .hero-images {
 
   position: relative;
@@ -283,4 +283,30 @@ main h1 {
 .hero-background {
   left: 95px;
   top: 70px;
+} */
+
+.hero-images img {
+  position: absolute;
+  
 }
+
+.hero-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* MODELS  */
+
+
+/* ABOUT US  */
+
+
+/* SOCIAL MEDIA  */
+
+
+/* OFFER */
+
+
+/* CONTACT */
